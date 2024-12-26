@@ -16,6 +16,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>simplechild</module>
+        <module>hello-service-api</module>
+        <module>hello-service-stdout</module>
     </modules>
 
 
@@ -78,7 +80,7 @@
                     <archive>
                         <manifest>
                             <mainClass>
-                                dev.rama27.Main</mainClass>
+                                dev.rama27.StdOutHello</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
