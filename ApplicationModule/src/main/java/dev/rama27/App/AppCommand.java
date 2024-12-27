@@ -7,8 +7,20 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class AppCommand implements CommandLineRunner {
-    private final Hello greeter;
 
+    @Value("${app.commonProperty: not supplied}")
+    private String commonProperty;
+    @Value("${app.appProperty: not supplied}")
+    private String appProperty;
+    @Value("${app.defaultProperty: not supplied}")
+    private String defaultProperty;
+    @Value("${app.site1Property: not supplied}")
+    private String site1Property;
+    @Value("${app.site2Property: not supplied}")
+    private String site2Property;
+
+
+    private final Hello greeter;
     @Value("${app.audience: Default World}")
     private String audience;
 
@@ -19,5 +31,10 @@ public class AppCommand implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         greeter.sayHello(audience);
+        System.out.println("commonProperty: " + commonProperty);
+        System.out.println("appProperty: " + appProperty);
+        System.out.println("defaultProperty: " + defaultProperty);
+        System.out.println("site1Property: " + site1Property);
+        System.out.println("site2Property: " + site2Property);
     }
 }
