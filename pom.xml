@@ -15,9 +15,10 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>simplechild</module>
+        <module>simple-child</module>
         <module>hello-service-api</module>
         <module>hello-service-stdout</module>
+        <module>ApplicationModule</module>
     </modules>
 
 
@@ -80,7 +81,7 @@
                     <archive>
                         <manifest>
                             <mainClass>
-                                dev.rama27.StdOutHello</mainClass>
+                                dev.rama27.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

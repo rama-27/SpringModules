@@ -2,7 +2,7 @@ package dev.rama27;
 
 public class StdOutHello implements Hello{
     private final String greeting;
-    private  StdOutHello(String greeting) {
+    public  StdOutHello(String greeting) {
         this.greeting = greeting;
     }
     @Override
