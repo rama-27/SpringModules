@@ -19,6 +19,9 @@
         <module>hello-service-api</module>
         <module>hello-service-stdout</module>
         <module>ApplicationModule</module>
+        <module>Logging-Ex</module>
+        <module>Testing</module>
+        <module>WordCounter</module>
     </modules>
 
 
